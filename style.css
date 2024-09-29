@@ -1,0 +1,66 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+/* Container Styles */
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-login {
+    display: flex;
+}
+.login{
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    width: 80px;
+    background-color: white;
+    cursor: pointer;
+    font-weight:bold;
+    color: rgb(129, 129, 129);
+}
+.sign-up{
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    width: 80px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+    font-weight: bold;
+}
+.nav-link a:hover{
+    color: black;
+}
