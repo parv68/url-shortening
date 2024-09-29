@@ -1,20 +1,17 @@
 /* Global Styles */
-
 body {
     margin: 0;
     padding: 0;
-    box-sizing:border-box ;
+    box-sizing: border-box;
 }
 
 /* Container Styles */
-
 .container {
     padding: 20px;
     max-width: 1200px;
     width: 90%;
     margin: auto;
 }
-
 
 .navbar {
     display: flex;
@@ -29,17 +26,19 @@ body {
 .nav-login {
     display: flex;
 }
-.login{
+
+.login {
     border: none;
     border-radius: 50px;
     padding: 5px;
     width: 80px;
     background-color: white;
     cursor: pointer;
-    font-weight:bold;
+    font-weight: bold;
     color: rgb(129, 129, 129);
 }
-.sign-up{
+
+.sign-up {
     border: none;
     border-radius: 50px;
     padding: 5px;
@@ -47,7 +46,7 @@ body {
     background-color: hsl(180, 66%, 49%);
     color: white;
     cursor: pointer;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .nav-link {
@@ -56,11 +55,157 @@ body {
     justify-content: center;
     gap: 20px;
 }
-.nav-link a{
+
+.nav-link a {
     text-decoration: none;
     color: rgb(129, 129, 129);
     font-weight: bold;
 }
-.nav-link a:hover{
+
+.nav-link a:hover {
     color: black;
+}
+
+/* Add styles for the toggle button */
+.toggle-button {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+/* Add styles for the mobile menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.mobile-menu.active {
+    width: 100%;
+    background-color: hsl(255, 11%, 22%);
+    color: white;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-menu hr {
+    border: 1px solid white;
+    width: 40%;
+}
+
+.mobile-menu .login,
+.mobile-menu .sign-up {
+    display: block;
+    margin: 10px 0;
+    width: 80px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.mobile-menu .login {
+    background-color: white;
+    color: rgb(129, 129, 129);
+}
+
+.mobile-menu .sign-up {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+}
+
+
+.toggle-button.active span {
+    background-color: #fff;
+}
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+    .toggle-button.active+.mobile-menu {
+        display: block;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .sign-up {
+        display: none;
+    }
+
+    .arrow {
+        padding: 8px;
+    }
 }
