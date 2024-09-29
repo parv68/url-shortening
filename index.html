@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shortly URL shortening API</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <section id="navbar__section">
@@ -21,8 +29,25 @@
             <a href="#">Features</a>
             <a href="#">Pricing</a>
             <a href="#">Resources</a>
-          </div> 
-        </div>   
+          </div>
+        </div>
+        <!-- Add a toggle button -->
+        <button class="toggle-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <hr>
+            <button class="login">Login</button>
+            <button class="sign-up">Sign Up</button>
+          </ul>
+        </div>
         <div id="nav-login">
           <button class="login">Login</button>
           <button class="sign-up">Sign Up</button>
@@ -30,38 +55,38 @@
       </div>
     </div>
   </section>
-  
+
 
 
   More than just shorter links
 
-  Build your brand’s recognition and get detailed insights 
+  Build your brand’s recognition and get detailed insights
   on how your links are performing.
 
   Get Started
-  
+
   Shorten a link here...
 
   Shorten It!
 
   Advanced Statistics
 
-  Track how your links are performing across the web with our 
+  Track how your links are performing across the web with our
   advanced statistics dashboard.
 
   Brand Recognition
 
-  Boost your brand recognition with each click. Generic links don’t 
+  Boost your brand recognition with each click. Generic links don’t
   mean a thing. Branded links help instil confidence in your content.
 
   Detailed Records
 
-  Gain insights into who is clicking your links. Knowing when and where 
+  Gain insights into who is clicking your links. Knowing when and where
   people engage with your content helps inform better decisions.
 
   Fully Customizable
 
-  Improve brand awareness and content discoverability through customizable 
+  Improve brand awareness and content discoverability through customizable
   links, supercharging audience engagement.
 
   Boost your links today
@@ -87,5 +112,18 @@
   Careers
   Contact
 
+  <script>
+    // Get the toggle button and mobile menu elements
+    const toggleButton = document.querySelector('.toggle-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    // Add an event listener to the toggle button
+    toggleButton.addEventListener('click', () => {
+      toggleButton.classList.toggle('active');
+      mobileMenu.classList.toggle('active');  // Ensure this class exists in CSS
+    });
+
+  </script>
 </body>
+
 </html>
