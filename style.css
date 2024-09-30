@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 /* Container Styles */
@@ -12,6 +14,7 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: auto;
+    
 }
 
 .navbar {
