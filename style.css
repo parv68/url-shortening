@@ -305,19 +305,65 @@ body {
     object-fit: cover;
 }
 
+#boost__section{
+    background: url('./images/bg-boost-desktop.svg') center repeat, hsl(257, 27%, 26%);
+}
 .boost-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding-bottom: 30px;
     border-radius: 10px;
-    background: url('./images/bg-boost-desktop.svg') center no-repeat, hsl(257, 27%, 26%);
+    width: 100%;
+
 }
 .boost-container h2{
     color: white;
 }
 
+#footer__section{
+    background: #000;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+.footer .features{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer .resources{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer .company{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer img{
+    filter: invert(1);
+}
+.social{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    filter: invert(1);
+}
 @media (max-width: 768px) {
     .toggle-button {
         display: block;
