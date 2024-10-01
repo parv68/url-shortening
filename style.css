@@ -190,7 +190,7 @@ body {
 .intro{
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 .intro .intro-left{
     width: 100%;
@@ -224,11 +224,99 @@ body {
     font-weight: bold;
 }
 
+.shortener-container {
+    display: inline-flex;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 50px 60px;
+    width: 90%;
+    background: url('./images/bg-shorten-desktop.svg') center no-repeat, hsl(257, 27%, 26%);
+}
 
+.shortener-container input {
+    border: none;
+    padding: 15px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 1rem;
+}
 
+.shortener-container button {
+    background-color: #2acfcf;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
+.statistics {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
 
+.statistics h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
+.statistics p {
+    color: #9e9aa7;
+    margin-bottom: 50px;
+}
+
+.statistics-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.card .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: #9e9aa7;
+    font-size: 0.9rem;
+}
+.card img{
+    background: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.boost-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background: url('./images/bg-boost-desktop.svg') center no-repeat, hsl(257, 27%, 26%);
+}
+.boost-container h2{
+    color: white;
+}
 
 @media (max-width: 768px) {
     .toggle-button {
