@@ -61,51 +61,64 @@
       <div class="intro">
         <div class="intro-left">
           <h1>More than just shorter links</h1>
-        <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-        <button class="button">Get Started</button>
+          <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+          <button class="button">Get Started</button>
         </div>
         <div class="intro-right">
           <img src="./images/illustration-working.svg" alt="illustration-working">
         </div>
-      </div>  
+      </div>
     </div>
   </section>
 
+  <section id="shortener__section">
+    <div class="container">
+      <div class="shortener-container">
+        <input type="text" placeholder="Shorten a link here..." />
+        <button>Shorten It!</button>
+      </div>
+    </div>
+  </section>
 
-  More than just shorter links
+  <section class="statistics">
+    <div class="container">
+      <h2>Advanced Statistics</h2>
+      <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
 
-  Build your brand’s recognition and get detailed insights
-  on how your links are performing.
+      <div class="statistics-cards">
+        <div class="card">
+          <div class="icon brand-recognition"></div>
+          <img src="./images/icon-brand-recognition.svg" alt="">
+          <h3>Brand Recognition</h3>
+          <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+            confidence in your content.</p>
+        </div>
+        <div class="card">
+          <div class="icon detailed-records"></div>
+          <img src="./images/icon-detailed-records.svg" alt="">
+          <h3>Detailed Records</h3>
+          <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps
+            inform better decisions.</p>
+        </div>
+        <div class="card">
+          <div class="icon fully-customizable"></div>
+          <img src="./images/icon-fully-customizable.svg" alt="">
+          <h3>Fully Customizable</h3>
+          <p>Improve brand awareness and content discoverability through customizable links, supercharging audience
+            engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Get Started
-
-  Shorten a link here...
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
+  <section id="boost__section">
+    <div class="container">
+      <div class="boost-container">
+        <h2>Boost Your Links Today</h2>
+        <button class="button">Get Started</button>
+      </div>
+    </div>
+  </section>
 
   Features
 
@@ -126,18 +139,7 @@
   Careers
   Contact
 
-  <script>
-    // Get the toggle button and mobile menu elements
-    const toggleButton = document.querySelector('.toggle-button');
-    const mobileMenu = document.querySelector('.mobile-menu');
-
-    // Add an event listener to the toggle button
-    toggleButton.addEventListener('click', () => {
-      toggleButton.classList.toggle('active');
-      mobileMenu.classList.toggle('active');  // Ensure this class exists in CSS
-    });
-
-  </script>
+<script src="script.js"></script>
 </body>
 
 </html>
