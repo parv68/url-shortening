@@ -228,7 +228,7 @@ body {
     display: inline-flex;
     border-radius: 10px;
     overflow: hidden;
-    padding: 50px 60px;
+    padding: 50px;
     width: 90%;
     background: url('./images/bg-shorten-desktop.svg') center no-repeat, hsl(257, 27%, 26%);
 }
