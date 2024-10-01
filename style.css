@@ -375,6 +375,9 @@ body {
     filter: invert(1);
 }
 @media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
     .toggle-button {
         display: block;
     }
